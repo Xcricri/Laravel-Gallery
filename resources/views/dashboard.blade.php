@@ -29,6 +29,7 @@
                                 <div class="text-sm text-gray-700 dark:text-gray-400 px-2 py-1">
                                     {{ $gallery->description }}
                                 </div>
+
                             </div>
                         @empty
                             <div class="col-span-4 text-center text-gray-900 dark:text-white">

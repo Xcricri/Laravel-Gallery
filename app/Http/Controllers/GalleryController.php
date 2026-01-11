@@ -36,11 +36,11 @@ class GalleryController extends Controller
         // Validasi input
         $request->validate([
             'title' => 'required|string|min:3|max:255|not_regex:/[0-9]/',
-            'cover' => 'required|image|mimes:jpeg,jpg,png|max:2048',
+            'cover' => 'required|image|mimes:jpeg,jpg,png|max:5120',
             'status' => 'required|in:active,inactive',
             'position' => 'required|in:1,2',
             'post' => 'required|exists:posts,id',
-            'description' => 'nullable|string|max:255',
+            'description' => 'nullapble|string|max:255',
         ]);
 
         // Upload cover image
